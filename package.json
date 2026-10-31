@@ -1,0 +1,14 @@
+{
+  "name": "six-passes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Link two footballers through the clubs they shared.",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@expo-google-fonts/archivo": "0.4.2",
+    "@expo-google-fonts/big-shoulders-display": "0.2.3",
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

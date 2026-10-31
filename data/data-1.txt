@@ -1,0 +1,92 @@
+Cristiano Ronaldo|Sporting CP 2002-2003; Man Utd 2003-2009; Real Madrid 2009-2018; Juventus 2018-2021; Man Utd 2021-2022.4; Al-Nassr 2022.5-
+Lionel Messi|Barcelona 2004-2021; PSG 2021-2023; Inter Miami 2023-
+Neymar|Santos 2009-2013; Barcelona 2013-2017; PSG 2017-2023; Al-Hilal 2023-2024.5; Santos 2024.5-
+Luis Suárez|Groningen 2006-2007; Ajax 2007-2010.5; Liverpool 2010.5-2014; Barcelona 2014-2020; Atlético Madrid 2020-2022; Grêmio 2022.5-2023.5; Inter Miami 2023.5-
+Thierry Henry|Monaco 1994-1998.5; Juventus 1998.5-1999; Arsenal 1999-2007; Barcelona 2007-2010; New York Red Bulls 2010-2014; Arsenal 2011.5-2011.8
+Dennis Bergkamp|Ajax 1986-1993; Inter Milan 1993-1995; Arsenal 1995-2006
+Patrick Vieira|AC Milan 1995-1996; Arsenal 1996-2005; Juventus 2005-2006; Inter Milan 2006-2009.5; Man City 2009.5-2011
+Tony Adams|Arsenal 1983-2002
+Ian Wright|Crystal Palace 1985-1991; Arsenal 1991-1998; West Ham 1998-1999
+Ray Parlour|Arsenal 1991.5-2004; Middlesbrough 2004-2007
+Marc Overmars|Ajax 1992-1997; Arsenal 1997-2000; Barcelona 2000-2004
+Emmanuel Petit|Monaco 1988-1997; Arsenal 1997-2000; Barcelona 2000-2001; Chelsea 2001-2004
+Nwankwo Kanu|Ajax 1993-1996; Inter Milan 1996-1998.5; Arsenal 1998.5-2004; West Brom 2004-2006; Portsmouth 2006-2012
+Robert Pires|Metz 1993-1998; Marseille 1998-2000; Arsenal 2000-2006; Villarreal 2006-2010; Aston Villa 2010.4-2011
+Freddie Ljungberg|Halmstad 1994-1998; Arsenal 1998-2007; West Ham 2007-2008; Celtic 2010.5-2011
+Sol Campbell|Tottenham 1992-2001; Arsenal 2001-2006; Portsmouth 2006-2009; Arsenal 2009.5-2010; Newcastle 2010-2011
+Ashley Cole|Arsenal 1999-2006; Chelsea 2006-2014; Roma 2014-2016; LA Galaxy 2015.5-2018.5; Derby 2018.5-2019
+Gilberto Silva|Atlético Mineiro 2000-2002; Arsenal 2002-2008; Panathinaikos 2008-2011
+Kolo Touré|Arsenal 2002-2009; Man City 2009-2013; Liverpool 2013-2016; Celtic 2016-2017
+Jens Lehmann|Schalke 1988-1998; AC Milan 1998-1998.5; Borussia Dortmund 1998.5-2003; Arsenal 2003-2008; Stuttgart 2008-2010; Arsenal 2010.5-2011
+Cesc Fàbregas|Arsenal 2003-2011; Barcelona 2011-2014; Chelsea 2014-2018.5; Monaco 2018.5-2022; Como 2022-2023
+Robin van Persie|Feyenoord 2001-2004; Arsenal 2004-2012; Man Utd 2012-2015; Fenerbahçe 2015-2017.5; Feyenoord 2017.5-2019
+Emmanuel Adebayor|Monaco 2003-2005.5; Arsenal 2005.5-2009; Man City 2009-2010.5; Real Madrid 2010.5-2011; Tottenham 2011-2015
+Theo Walcott|Southampton 2005-2005.5; Arsenal 2005.5-2017.5; Everton 2017.5-2020; Southampton 2020-2023
+Samir Nasri|Marseille 2004-2008; Arsenal 2008-2011; Man City 2011-2016; Sevilla 2016-2017
+Aaron Ramsey|Cardiff 2007-2008; Arsenal 2008-2019; Juventus 2019-2021.5; Rangers 2021.5-2022; Nice 2022-2023; Cardiff 2023-2025
+Jack Wilshere|Arsenal 2008-2009.5; Bolton 2009.5-2010; Arsenal 2010-2016; Bournemouth 2016-2017; Arsenal 2017-2018; West Ham 2018-2020; Bournemouth 2020.5-2021
+Laurent Koscielny|Lorient 2009-2010; Arsenal 2010-2019; Bordeaux 2019-2022
+Per Mertesacker|Hannover 2003-2006; Werder Bremen 2006-2011; Arsenal 2011-2018
+Lukas Podolski|Köln 2003-2006; Bayern Munich 2006-2009; Köln 2009-2012; Arsenal 2012-2014.5; Inter Milan 2014.5-2015; Galatasaray 2015-2017; Vissel Kobe 2017-2019.5
+Mikel Arteta|PSG 2000-2002; Rangers 2002-2004; Real Sociedad 2004-2004.5; Everton 2004.5-2011; Arsenal 2011-2016
+Santi Cazorla|Villarreal 2003-2006; Recreativo 2006-2007; Villarreal 2007-2011; Málaga 2011-2012; Arsenal 2012-2018; Villarreal 2018-2020; Al-Sadd 2020-2023; Real Oviedo 2023-
+Mesut Özil|Schalke 2006-2007.5; Werder Bremen 2007.5-2010; Real Madrid 2010-2013; Arsenal 2013-2020.5; Fenerbahçe 2020.5-2022; Başakşehir 2022-2022.7
+Alexis Sánchez|Udinese 2008-2011; Barcelona 2011-2014; Arsenal 2014-2017.5; Man Utd 2017.5-2019; Inter Milan 2019-2022; Marseille 2022-2023; Inter Milan 2023-2024; Udinese 2024-2025
+Olivier Giroud|Montpellier 2010-2012; Arsenal 2012-2017.5; Chelsea 2017.5-2021; AC Milan 2021-2024; LAFC 2024-2025; Lille 2025-
+Petr Čech|Rennes 2002-2004; Chelsea 2004-2015; Arsenal 2015-2019
+Pierre-Emerick Aubameyang|Saint-Étienne 2010.5-2013; Borussia Dortmund 2013-2017.5; Arsenal 2017.5-2021.5; Barcelona 2021.5-2022; Chelsea 2022-2023; Marseille 2023-2024; Al-Qadsiah 2024-2025; Marseille 2025-
+Serge Gnabry|Arsenal 2012-2015; West Brom 2015-2016; Werder Bremen 2016-2017; Hoffenheim 2017-2018; Bayern Munich 2018-
+Emiliano Martínez|Arsenal 2019-2020; Aston Villa 2020-
+Bukayo Saka|Arsenal 2018-
+Martin Ødegaard|Real Madrid 2014.5-2016.5; Heerenveen 2016.5-2018; Vitesse 2018-2019; Real Sociedad 2019-2020; Real Madrid 2020-2020.5; Arsenal 2020.5-
+Declan Rice|West Ham 2016-2023; Arsenal 2023-
+William Saliba|Saint-Étienne 2018-2020; Nice 2020.5-2021; Marseille 2021-2022; Arsenal 2022-
+Gabriel Martinelli|Arsenal 2019-
+Kai Havertz|Bayer Leverkusen 2016-2020; Chelsea 2020-2023; Arsenal 2023-
+Thomas Partey|Atlético Madrid 2015-2020; Arsenal 2020-2025; Villarreal 2025-
+Gabriel Jesus|Palmeiras 2015-2016.5; Man City 2016.5-2022; Arsenal 2022-
+Oleksandr Zinchenko|Man City 2017-2022; Arsenal 2022-2025
+Eberechi Eze|QPR 2016-2020; Crystal Palace 2020-2025; Arsenal 2025-
+Viktor Gyökeres|Coventry 2021-2023; Sporting CP 2023-2025; Arsenal 2025-
+Ryan Giggs|Man Utd 1990-2014
+Paul Scholes|Man Utd 1994-2013
+Gary Neville|Man Utd 1992-2011
+David Beckham|Man Utd 1992-2003; Real Madrid 2003-2007; LA Galaxy 2007-2012.5; AC Milan 2008.5-2009; AC Milan 2009.5-2010; PSG 2012.5-2013
+Roy Keane|Nottingham Forest 1990-1993; Man Utd 1993-2005.4; Celtic 2005.5-2006
+Eric Cantona|Leeds 1991.5-1992.4; Man Utd 1992.4-1997
+Peter Schmeichel|Brøndby 1987-1991; Man Utd 1991-1999; Sporting CP 1999-2001; Aston Villa 2001-2002; Man City 2002-2003
+Andy Cole|Newcastle 1992.5-1994.5; Man Utd 1994.5-2001.4; Blackburn 2001.5-2004; Fulham 2004-2005; Man City 2005-2006
+Dwight Yorke|Aston Villa 1989-1998; Man Utd 1998-2002; Blackburn 2002-2004
+Teddy Sheringham|Millwall 1984-1991; Nottingham Forest 1991-1992; Tottenham 1992-1997; Man Utd 1997-2001; Tottenham 2001-2003; Portsmouth 2003-2004; West Ham 2004-2007
+Ole Gunnar Solskjær|Molde 1994-1996; Man Utd 1996-2007
+Ruud van Nistelrooy|Heerenveen 1997-1998; PSV 1998-2001; Man Utd 2001-2006; Real Madrid 2006-2009.5; Hamburg 2009.5-2011; Málaga 2011-2012
+Rio Ferdinand|West Ham 1995-2000.4; Leeds 2000.4-2002; Man Utd 2002-2014; QPR 2014-2015
+Nemanja Vidić|Red Star Belgrade 2000-2004; Spartak Moscow 2004-2005.5; Man Utd 2005.5-2014; Inter Milan 2014-2015.5
+Edwin van der Sar|Ajax 1990-1999; Juventus 1999-2001; Fulham 2001-2005; Man Utd 2005-2011
+Patrice Evra|Monaco 2002-2005.5; Man Utd 2005.5-2014; Juventus 2014-2016.5; Marseille 2016.5-2017.5; West Ham 2017.5-2018
+Michael Carrick|West Ham 1999-2004; Tottenham 2004-2006; Man Utd 2006-2018
+Darren Fletcher|Man Utd 2003-2014.5; West Brom 2014.5-2017; Stoke 2017-2019
+Owen Hargreaves|Bayern Munich 1997-2007; Man Utd 2007-2011; Man City 2011-2012
+Wayne Rooney|Everton 2002-2004; Man Utd 2004-2017; Everton 2017-2018; DC United 2018-2019.5; Derby 2019.5-2020.5
+Carlos Tevez|Boca Juniors 2001-2004.5; Corinthians 2004.5-2006; West Ham 2006-2007; Man Utd 2007-2009; Man City 2009-2013; Juventus 2013-2015; Boca Juniors 2015-2016.5
+Dimitar Berbatov|Bayer Leverkusen 2000.5-2006; Tottenham 2006-2008; Man Utd 2008-2012; Fulham 2012-2013.5; Monaco 2013.5-2015
+Nani|Sporting CP 2005-2007; Man Utd 2007-2014; Sporting CP 2014-2015; Fenerbahçe 2015-2016; Valencia 2016-2017; Lazio 2017-2018
+Antonio Valencia|Wigan 2006-2009; Man Utd 2009-2019
+Javier Hernández|Man Utd 2010-2014; Real Madrid 2014-2015; Bayer Leverkusen 2015-2017; West Ham 2017-2019; Sevilla 2019-2019.5; LA Galaxy 2019.5-2023
+Juan Mata|Valencia 2007-2011; Chelsea 2011-2013.5; Man Utd 2013.5-2022; Galatasaray 2022-2023; Vissel Kobe 2023.5-2024
+Ander Herrera|Athletic Bilbao 2011-2014; Man Utd 2014-2019; PSG 2019-2022; Athletic Bilbao 2022-2024; Boca Juniors 2024-
+Marouane Fellaini|Standard Liège 2006-2008; Everton 2008-2013; Man Utd 2013-2018.5; Shandong Taishan 2018.5-2023
+Anthony Martial|Lyon 2012-2013; Monaco 2013-2015; Man Utd 2015-2021.5; Sevilla 2021.5-2022; Man Utd 2022-2024; AEK Athens 2024-
+Paul Pogba|Man Utd 2011-2012; Juventus 2012-2016; Man Utd 2016-2022; Juventus 2022-2024; Monaco 2025-
+Jesse Lingard|Man Utd 2014-2020.5; West Ham 2020.5-2021; Man Utd 2021-2022; Nottingham Forest 2022-2023; FC Seoul 2023.5-2025
+David de Gea|Atlético Madrid 2009-2011; Man Utd 2011-2023; Fiorentina 2024-
+Marcus Rashford|Man Utd 2015.5-2024.5; Aston Villa 2024.5-2025; Barcelona 2025-
+Bruno Fernandes|Udinese 2013-2016; Sampdoria 2016-2017; Sporting CP 2017-2019.5; Man Utd 2019.5-
+Harry Maguire|Sheffield United 2011-2014; Hull 2014-2017; Leicester 2017-2019; Man Utd 2019-
+Victor Lindelöf|Benfica 2012-2017; Man Utd 2017-2025; Aston Villa 2025-
+Lisandro Martínez|Ajax 2019-2022; Man Utd 2022-
+Casemiro|São Paulo 2010-2012.5; Real Madrid 2012.5-2014; Porto 2014-2015; Real Madrid 2015-2022; Man Utd 2022-
+Mason Mount|Vitesse 2017-2018; Derby 2018-2019; Chelsea 2019-2023; Man Utd 2023-
+Bryan Mbeumo|Troyes 2017-2019; Brentford 2019-2025; Man Utd 2025-
+Matheus Cunha|RB Leipzig 2018-2019.5; Hertha Berlin 2019.5-2021; Atlético Madrid 2021-2022.5; Wolves 2022.5-2025; Man Utd 2025-
+Benjamin Šeško|RB Salzburg 2019-2023; RB Leipzig 2023-2025; Man Utd 2025-

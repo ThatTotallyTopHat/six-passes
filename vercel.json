@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "node build.js",
+  "outputDirectory": "dist",
+  "headers": [
+    { "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}

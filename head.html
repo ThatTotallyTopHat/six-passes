@@ -1,0 +1,182 @@
+<title>Six Passes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+<style>
+/* Layout: one narrow column. A striped pitch holds the fixture; the chain reads top to bottom like a passing move. */
+:root{
+  --bg:#eef2ec; --surface:#fbfcfa; --ink:#14221a; --muted:#56655c; --line:#d3dcd1; --track:#a7b6ab; --hover:#e7eee5;
+  --accent:#1d6a43; --on-accent:#f4faf6; --accent-soft:#d9eadf; --ring:rgba(29,106,67,.22);
+  --pitch:#236f48; --pitch-2:#1d633f; --chalk:#f5f9f3; --chalk-line:rgba(245,249,243,.55);
+  --card:#efbb27; --on-card:#241c00; --card-soft:#f8ecc4; --red:#b8382c;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1510; --surface:#132019; --ink:#e4ece6; --muted:#93a399; --line:#22352a; --track:#3b5345; --hover:#1a2b21;
+  --accent:#5fc18d; --on-accent:#07130c; --accent-soft:#183625; --ring:rgba(95,193,141,.25);
+  --pitch:#1b5a38; --pitch-2:#174e31; --chalk:#eef5ef; --chalk-line:rgba(238,245,239,.5);
+  --card:#efbb27; --on-card:#241c00; --card-soft:#3a3114; --red:#f07064; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1510; --surface:#132019; --ink:#e4ece6; --muted:#93a399; --line:#22352a; --track:#3b5345; --hover:#1a2b21;
+  --accent:#5fc18d; --on-accent:#07130c; --accent-soft:#183625; --ring:rgba(95,193,141,.25);
+  --pitch:#1b5a38; --pitch-2:#174e31; --chalk:#eef5ef; --chalk-line:rgba(238,245,239,.5);
+  --card:#efbb27; --on-card:#241c00; --card-soft:#3a3114; --red:#f07064; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;-webkit-text-size-adjust:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 40px}
+button{font-family:inherit}
+button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mark{font:900 32px/0.9 var(--display);text-transform:uppercase;letter-spacing:.01em;margin:0}
+.mark span{color:var(--accent)}
+.sub{display:block;margin-top:5px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--muted);font-weight:600;font-size:13px;padding:8px 13px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+.freebar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.chips{display:inline-flex;gap:6px}
+.chips button{min-width:38px;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-weight:700;cursor:pointer;font-variant-numeric:tabular-nums}
+.chips button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.freebar .grow{flex:1}
+
+.pitch{position:relative;border-radius:14px;overflow:hidden;color:var(--chalk);
+  background:repeating-linear-gradient(90deg,var(--pitch) 0 30px,var(--pitch-2) 30px 60px);
+  padding:24px 14px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:8px}
+.pitch::before{content:"";position:absolute;inset:8px;border:1.5px solid var(--chalk-line);border-radius:5px;pointer-events:none}
+.pitch::after{content:"";position:absolute;top:8px;bottom:8px;left:50%;border-left:1.5px solid var(--chalk-line);pointer-events:none}
+.side{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;min-width:0}
+.side .lbl{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.side .nm{font:800 21px/1.02 var(--display);text-transform:uppercase;letter-spacing:.01em;text-wrap:balance;overflow-wrap:anywhere}
+.badge{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:800 17px/1 var(--display);letter-spacing:.03em;flex:none}
+.pitch .badge{background:var(--chalk);color:var(--pitch)}
+.pitch .to .badge{background:var(--card);color:var(--on-card)}
+.centre{position:relative;z-index:1}
+.ring{width:68px;height:68px;border-radius:50%;border:1.5px solid var(--chalk-line);background:var(--pitch-2);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring b{font:900 30px/0.95 var(--display)}
+.ring small{font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+
+.scoreline{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.scoreline b{color:var(--ink);font-weight:700}
+.cards{display:inline-flex;gap:3px;margin-left:4px;vertical-align:-2px}
+.yc{display:inline-block;width:9px;height:13px;border-radius:2px;background:var(--card);transform:rotate(-8deg)}
+
+.chain{list-style:none;margin:0;padding:0;position:relative;display:flex;flex-direction:column;gap:10px}
+.chain::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;border-left:2px dashed var(--track)}
+.chain li{position:relative;display:flex;align-items:center;gap:12px;min-height:40px;min-width:0}
+.chain .p .badge{width:40px;height:40px;font-size:15px;background:var(--surface);color:var(--ink);border:2px solid var(--ink);position:relative;z-index:1}
+.chain .p.start .badge{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.chain .p.goal .badge{background:var(--card);border-color:var(--card);color:var(--on-card)}
+.chain .p.ghost .badge{background:var(--bg);border:2px dashed var(--track);color:var(--muted)}
+.chain .p .nm{font-weight:600;font-size:16px;min-width:0;overflow-wrap:anywhere}
+.chain .p.ghost .nm{color:var(--muted)}
+.chain .tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.chain .c{padding-left:52px}
+.chain .c::before{content:"";position:absolute;left:13px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:var(--surface);border:2px solid var(--track);z-index:1}
+.club{display:inline-flex;align-items:baseline;gap:4px 10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 11px;min-width:0}
+.club b{font-weight:700}
+.club span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.c.pending .club{border-style:dashed}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.prompt{margin:0;font-size:15px}
+#guess{width:100%;font:500 16px/1.2 var(--body);padding:13px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);outline:none;-webkit-appearance:none;appearance:none}
+#guess:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
+#guess::placeholder{color:var(--muted)}
+.shake{animation:shake .34s}
+@keyframes shake{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.suggest{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.suggest button{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;padding:11px 14px;border:0;border-top:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:15px;font-weight:500;cursor:pointer}
+.suggest li:first-child button{border-top:0}
+.suggest button:hover,.suggest button.active{background:var(--hover)}
+.suggest small{color:var(--muted);font-size:12px}
+.msg{margin:0;min-height:1.35em;font-size:14px;color:var(--muted)}
+.msg.bad{color:var(--red)}
+.hint{margin:0;font-size:14px;background:var(--card-soft);border-radius:8px;padding:8px 11px}
+.hint button{border:0;background:none;padding:0;color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:14px}
+.actions{display:flex;gap:8px}
+.btn{flex:1;font-weight:600;font-size:14px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.btn:hover:not(:disabled){background:var(--hover)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.warn{color:var(--red)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:var(--accent);filter:brightness(1.06)}
+
+.result{gap:12px;padding:18px 16px}
+.eyebrow{margin:0;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.final{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.final .big{font:900 58px/0.85 var(--display);font-variant-numeric:tabular-nums}
+.final .unit{font:800 22px/1 var(--display);text-transform:uppercase}
+.pill{font-size:12px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.pill.over{background:var(--card-soft);color:var(--ink)}
+.result .meta{margin:0;color:var(--muted);font-size:14px}
+.result h3{margin:4px 0 0;font:800 18px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+#shareFallback{width:100%;min-height:110px;font:13px/1.4 ui-monospace,Menlo,monospace;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px}
+
+.how{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 14px}
+.how summary{cursor:pointer;font-weight:600;padding:10px 0}
+.how ol{margin:0 0 10px;padding-left:20px;display:flex;flex-direction:column;gap:6px;max-width:62ch}
+.how p{margin:0 0 12px;color:var(--muted);font-size:14px;max-width:62ch}
+.foot{margin:0;font-size:12px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion: reduce){.shake{animation:none}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 class="mark">Six <span>Passes</span></h1>
+      <span class="sub" id="subline"></span>
+    </div>
+    <div class="seg" aria-label="Game mode">
+      <button id="modeDaily" type="button" aria-pressed="true">Daily</button>
+      <button id="modeFree" type="button" aria-pressed="false">Free play</button>
+    </div>
+  </header>
+
+  <div class="freebar" id="freebar" hidden>
+    <span>Par</span>
+    <div class="chips" id="parChips">
+      <button type="button" data-par="2" aria-pressed="false">2</button>
+      <button type="button" data-par="3" aria-pressed="true">3</button>
+      <button type="button" data-par="4" aria-pressed="false">4</button>
+    </div>
+    <span class="grow"></span>
+    <button type="button" class="btn" id="newPair" style="flex:none">New pair</button>
+  </div>
+
+  <section class="pitch" id="fixture" aria-label="Today's pair"></section>
+  <div class="scoreline" id="scoreline"></div>
+  <ol class="chain" id="chain" aria-label="Your move"></ol>
+
+  <section class="panel" id="play">
+    <label class="prompt" for="guess" id="prompt"></label>
+    <input id="guess" type="text" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go">
+    <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+    <p class="hint" id="hintline" hidden></p>
+    <p class="msg" id="msg" aria-live="polite"></p>
+    <div class="actions">
+      <button type="button" class="btn" id="undoBtn">Undo</button>
+      <button type="button" class="btn" id="hintBtn">Hint</button>
+      <button type="button" class="btn warn" id="giveBtn">Give up</button>
+    </div>
+  </section>
+
+  <section class="panel result" id="result" hidden></section>
+
+  <details class="how">
+    <summary>How to play</summary>
+    <ol>
+      <li>Start from the left-hand player on the pitch.</li>
+      <li>Name a club he played for.</li>
+      <li>Name someone who was at that club in at least one of the same seasons.</li>
+      <li>Keep passing until you reach the right-hand player.</li>
+    </ol>
+    <p>Par is the fewest passes the pair can be linked in. A wrong answer is a yellow card. A hint shows one step on the quickest route from where you are.</p>
+  </details>
+  <p class="foot" id="foot"></p>
+</div>
